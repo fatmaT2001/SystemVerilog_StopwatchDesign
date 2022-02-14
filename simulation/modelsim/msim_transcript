@@ -1,0 +1,197 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do stopwatch_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:49 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv 
+# -- Compiling module stopwatch
+# 
+# Top level modules:
+# 	stopwatch
+# End time: 05:38:50 on Feb 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:50 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 05:38:50 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:51 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv 
+# -- Compiling module clkdiv
+# 
+# Top level modules:
+# 	clkdiv
+# End time: 05:38:51 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:51 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv 
+# -- Compiling module counter9to0
+# 
+# Top level modules:
+# 	counter9to0
+# End time: 05:38:51 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:52 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv 
+# -- Compiling module down_logic9
+# 
+# Top level modules:
+# 	down_logic9
+# End time: 05:38:52 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:52 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv 
+# -- Compiling module up_logic9
+# 
+# Top level modules:
+# 	up_logic9
+# End time: 05:38:52 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:52 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv 
+# -- Compiling module mix4to1
+# 
+# Top level modules:
+# 	mix4to1
+# End time: 05:38:52 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/t_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:53 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/t_ff.sv 
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	t_ff
+# End time: 05:38:53 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/d_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:53 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/d_ff.sv 
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	d_ff
+# End time: 05:38:53 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/mix1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:53 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/mix1.sv 
+# -- Compiling module mix1
+# 
+# Top level modules:
+# 	mix1
+# End time: 05:38:54 on Feb 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:54 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv 
+# -- Compiling module couter0to5
+# 
+# Top level modules:
+# 	couter0to5
+# End time: 05:38:54 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/down_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:54 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/down_logic.sv 
+# -- Compiling module down_logic
+# 
+# Top level modules:
+# 	down_logic
+# End time: 05:38:54 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/up_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:54 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/up_logic.sv 
+# -- Compiling module up_logic
+# 
+# Top level modules:
+# 	up_logic
+# End time: 05:38:54 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch {C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:38:54 on Feb 14,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ahmed/Desktop/stopwatch" C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv 
+# -- Compiling module disp_hex_mux
+# 
+# Top level modules:
+# 	disp_hex_mux
+# End time: 05:38:54 on Feb 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.stopwatch
+# vsim work.stopwatch 
+# Start time: 05:39:02 on Feb 14,2022
+# Loading sv_std.std
+# Loading work.stopwatch
+# Loading work.counter
+# Loading work.clkdiv
+# Loading work.counter9to0
+# Loading work.down_logic9
+# Loading work.up_logic9
+# Loading work.mix4to1
+# Loading work.t_ff
+# Loading work.d_ff
+# Loading work.mix1
+# Loading work.couter0to5
+# Loading work.down_logic
+# Loading work.up_logic
+# Loading work.disp_hex_mux
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'set'. The port definition is at: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /stopwatch/c19 File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'set'. The port definition is at: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /stopwatch/c15 File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 20
+add wave -position insertpoint sim:/stopwatch/*
+force -freeze sim:/stopwatch/r 1 0
+force -freeze sim:/stopwatch/o 0 0
+force -freeze sim:/stopwatch/l 0 0
+force -freeze sim:/stopwatch/m 0 0
+force -freeze sim:/stopwatch/clk 1 0, 0 {50 ps} -r 100
+run
+run
+force -freeze sim:/stopwatch/r 0 0
+force -freeze sim:/stopwatch/o 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 05:42:13 on Feb 14,2022, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 2

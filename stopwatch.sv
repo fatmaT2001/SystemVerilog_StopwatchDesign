@@ -1,0 +1,33 @@
+module stopwatch(clk,r,o,l,m,an,sseg);
+output logic [3:0]an;
+output logic [7:0]sseg;
+input logic clk,r,o,l,m;
+//input logic [6:0] num;
+logic [3:0] counter51,counter52;
+logic [3:0] counter91,counter92;
+logic [2:0] load_5;
+logic [3:0] load_9; 
+logic [6:0]load;
+logic [1:0]s;
+logic rbar;
+logic [0:6]num;
+not notr (rbar,r);
+assign num = 7'b000000;
+counter c (clk,r,o,l,m,num,s,reset,load);
+clkdiv cd (1'b0,clk,clkdiv);//(reset, clock_in, clock_out);
+counter9to0 c19(s,clkdiv,1'b0,reset,A09,A19,A29,A39);//(s,clk,set,reset,A0,A1,A2);
+and clk1n (clk1,A09,A39);
+couter0to5 c15(s,clk1,1'b0,reset,A05,A15,A25);
+and clk2n (clk2,A05,A25);
+counter9to0 c29(s,clk2,load_9,reset,A091,A191,A291,A391);
+and clk3n (clk3,A091,A391);
+couter0to5 c25(s,clk3,load_5,reset,A051,A151,A251);
+assign counter51={1'b0,A25,A15,A05};
+assign counter91={A39,A29,A19,A09};
+assign counter52={1'b0,A251,A151,A051};
+assign counter92={A391,A291,A191,A091};
+assign load_5={load[4],load[5],load[6]};
+assign load_9 ={load[0],load[1],load[2],load[3]};
+disp_hex_mux seven4(clk,r,counter52,counter92,counter51,counter91,4'b1111,an,sseg);
+
+endmodule

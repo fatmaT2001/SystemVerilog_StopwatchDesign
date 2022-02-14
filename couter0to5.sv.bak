@@ -1,0 +1,16 @@
+module counter0to5 (s,clk,set,i0,i1,i2,A0,A1,A2);
+input logic [1:0]s;
+input logic clk;
+output logic A0,A1,A2;
+//for down module 
+down_logic (A0,A1,A2,T0down,T1down,T2down);//(input logic A0,A1,A2,output logic T0,T1,T2);
+//for up module 
+up_logic (A0,A1,A2,T0up,T1up,T2up);
+//mix
+mix4to1 mix1 (T0,i0,T0down,T0up,A0,s[0],s[1]);//(out, a, b, c, d, s0, s1);
+mix4to1 mix2(T1,i1,T1down,T1up,A1,s[0],s[1]);
+mix4to1 mix3(T2,i2,T2down,T2up,A1,s[0],s[1]);
+t_ff ff1(T0,clk,set,A0,A0bar);//module t_ff (input logic t,clk,output logic Q,Qbar);
+t_ff ff2(T1,clk,set,A1,A1bar);
+t_ff ff3(T2,clk,set,A2,A2bar);
+endmodule 

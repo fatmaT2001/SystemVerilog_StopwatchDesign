@@ -1,0 +1,24 @@
+module counter0to5_test;
+logic clk,reset,A0,A1,A2,i0,i1,i2; //(input logic clk,m,en,output logic Q0,Q1,Q2)
+logic [1:0]s;
+//
+couter0to5 c1 (s,clk,reset,i0,i1,i2,A0,A1,A2);//(s,clk,set,i0,i1,i2,A0,A1,A2); 
+always #50 clk=~clk;
+initial begin 
+clk=0;
+s=2'b01;
+i0=1;
+i1=0;
+i2=1;
+reset=1;
+#100
+reset=0;
+#2000
+$stop;
+end
+initial 
+begin
+$display ("\t\t time ,   T0,    T1,    T2     ");
+$monitor ("    %d       ,  %b       , %b     ,  %b",$time ,A0,A1,A2); 
+end
+endmodule 

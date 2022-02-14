@@ -1,0 +1,827 @@
+Analysis & Synthesis report for stopwatch
+Mon Feb 14 05:20:45 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: clkdiv:cd
+ 15. Port Connectivity Checks: "disp_hex_mux:seven4"
+ 16. Port Connectivity Checks: "couter0to5:c15|t_ff:ff3"
+ 17. Port Connectivity Checks: "couter0to5:c15|t_ff:ff2"
+ 18. Port Connectivity Checks: "couter0to5:c15|t_ff:ff1"
+ 19. Port Connectivity Checks: "couter0to5:c15|mix4to1:mix3"
+ 20. Port Connectivity Checks: "couter0to5:c15|mix4to1:mix2"
+ 21. Port Connectivity Checks: "couter0to5:c15|mix4to1:mix1"
+ 22. Port Connectivity Checks: "couter0to5:c15"
+ 23. Port Connectivity Checks: "counter9to0:c19|t_ff:ff4"
+ 24. Port Connectivity Checks: "counter9to0:c19|t_ff:ff3"
+ 25. Port Connectivity Checks: "counter9to0:c19|t_ff:ff2"
+ 26. Port Connectivity Checks: "counter9to0:c19|t_ff:ff1"
+ 27. Port Connectivity Checks: "counter9to0:c19|mix4to1:mix8"
+ 28. Port Connectivity Checks: "counter9to0:c19|mix4to1:mix7"
+ 29. Port Connectivity Checks: "counter9to0:c19|mix4to1:mix6"
+ 30. Port Connectivity Checks: "counter9to0:c19|mix4to1:mix5"
+ 31. Port Connectivity Checks: "counter9to0:c19"
+ 32. Port Connectivity Checks: "clkdiv:cd"
+ 33. Port Connectivity Checks: "counter:c"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+ 37. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Feb 14 05:20:45 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; stopwatch                                   ;
+; Top-level Entity Name              ; stopwatch                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 170                                         ;
+;     Total combinational functions  ; 170                                         ;
+;     Dedicated logic registers      ; 36                                          ;
+; Total registers                    ; 36                                          ;
+; Total pins                         ; 17                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; stopwatch          ; stopwatch          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
+; stopwatch.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv    ;         ;
+; counter.sv                       ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/counter.sv      ;         ;
+; clkdiv.sv                        ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv       ;         ;
+; counter9to0.sv                   ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv  ;         ;
+; down_logic9.sv                   ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv  ;         ;
+; up_logic9.sv                     ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv    ;         ;
+; mix4to1.sv                       ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv      ;         ;
+; t_ff.sv                          ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/t_ff.sv         ;         ;
+; d_ff.sv                          ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/d_ff.sv         ;         ;
+; mix1.sv                          ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/mix1.sv         ;         ;
+; couter0to5.sv                    ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv   ;         ;
+; down_logic.sv                    ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/down_logic.sv   ;         ;
+; up_logic.sv                      ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/up_logic.sv     ;         ;
+; disp_hex_mux.sv                  ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 170       ;
+;                                             ;           ;
+; Total combinational functions               ; 170       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 97        ;
+;     -- 3 input functions                    ; 30        ;
+;     -- <=2 input functions                  ; 43        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 143       ;
+;     -- arithmetic mode                      ; 27        ;
+;                                             ;           ;
+; Total registers                             ; 36        ;
+;     -- Dedicated logic registers            ; 36        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 17        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 36        ;
+; Total fan-out                               ; 696       ;
+; Average fan-out                             ; 2.90      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+--------------+
+; |stopwatch                 ; 170 (1)             ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |stopwatch                                  ; stopwatch    ; work         ;
+;    |clkdiv:cd|             ; 38 (38)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|clkdiv:cd                        ; clkdiv       ; work         ;
+;    |counter9to0:c19|       ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19                  ; counter9to0  ; work         ;
+;       |mix4to1:mix6|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|mix4to1:mix6     ; mix4to1      ; work         ;
+;       |mix4to1:mix8|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|mix4to1:mix8     ; mix4to1      ; work         ;
+;       |t_ff:ff1|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff1         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff1|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff2|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff2         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff2|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff3|           ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff3         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff3|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff4|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff4         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c19|t_ff:ff4|d_ff:ff ; d_ff         ; work         ;
+;    |counter9to0:c29|       ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29                  ; counter9to0  ; work         ;
+;       |mix1:mix11|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix1:mix11       ; mix1         ; work         ;
+;       |mix1:mix12|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix1:mix12       ; mix1         ; work         ;
+;       |mix1:mix13|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix1:mix13       ; mix1         ; work         ;
+;       |mix1:mix14|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix1:mix14       ; mix1         ; work         ;
+;       |mix4to1:mix6|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix4to1:mix6     ; mix4to1      ; work         ;
+;       |mix4to1:mix7|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix4to1:mix7     ; mix4to1      ; work         ;
+;       |mix4to1:mix8|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|mix4to1:mix8     ; mix4to1      ; work         ;
+;       |t_ff:ff1|           ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff1         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff1|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff2|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff2         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff2|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff3|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff3         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff3|d_ff:ff ; d_ff         ; work         ;
+;       |t_ff:ff4|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff4         ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter9to0:c29|t_ff:ff4|d_ff:ff ; d_ff         ; work         ;
+;    |counter:c|             ; 17 (17)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|counter:c                        ; counter      ; work         ;
+;    |couter0to5:c15|        ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15                   ; couter0to5   ; work         ;
+;       |mix4to1:mix2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|mix4to1:mix2      ; mix4to1      ; work         ;
+;       |mix4to1:mix3|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|mix4to1:mix3      ; mix4to1      ; work         ;
+;       |t_ff:ff1|           ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff1          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff1|d_ff:ff  ; d_ff         ; work         ;
+;       |t_ff:ff2|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff2          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff2|d_ff:ff  ; d_ff         ; work         ;
+;       |t_ff:ff3|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff3          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c15|t_ff:ff3|d_ff:ff  ; d_ff         ; work         ;
+;    |couter0to5:c25|        ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25                   ; couter0to5   ; work         ;
+;       |mix4to1:mix1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|mix4to1:mix1      ; mix4to1      ; work         ;
+;       |mix4to1:mix2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|mix4to1:mix2      ; mix4to1      ; work         ;
+;       |mix4to1:mix3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|mix4to1:mix3      ; mix4to1      ; work         ;
+;       |t_ff:ff1|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff1          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff1|d_ff:ff  ; d_ff         ; work         ;
+;       |t_ff:ff2|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff2          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff2|d_ff:ff  ; d_ff         ; work         ;
+;       |t_ff:ff3|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff3          ; t_ff         ; work         ;
+;          |d_ff:ff|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|couter0to5:c25|t_ff:ff3|d_ff:ff  ; d_ff         ; work         ;
+;    |disp_hex_mux:seven4|   ; 22 (22)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |stopwatch|disp_hex_mux:seven4              ; disp_hex_mux ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; counter:c|fnum[0]                                  ; counter:c|Equal2    ; yes                    ;
+; counter:c|fnum[2]                                  ; counter:c|Equal2    ; yes                    ;
+; counter:c|q[1]                                     ; counter:c|q         ; yes                    ;
+; counter:c|q[0]                                     ; counter:c|q         ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; counter9to0:c29|t_ff:ff1|d_ff:ff|Q~0                   ;    ;
+; couter0to5:c15|t_ff:ff1|d_ff:ff|Q~0                    ;    ;
+; counter9to0:c19|t_ff:ff1|d_ff:ff|Q~0                   ;    ;
+; couter0to5:c25|t_ff:ff1|d_ff:ff|Q~0                    ;    ;
+; counter9to0:c29|t_ff:ff2|d_ff:ff|Q~0                   ;    ;
+; couter0to5:c15|t_ff:ff2|d_ff:ff|Q~0                    ;    ;
+; counter9to0:c19|t_ff:ff2|d_ff:ff|Q~0                   ;    ;
+; couter0to5:c25|t_ff:ff2|d_ff:ff|Q~0                    ;    ;
+; couter0to5:c15|t_ff:ff3|d_ff:ff|Q~0                    ;    ;
+; counter9to0:c29|t_ff:ff3|d_ff:ff|Q~0                   ;    ;
+; counter9to0:c19|t_ff:ff3|d_ff:ff|Q~0                   ;    ;
+; couter0to5:c25|t_ff:ff3|d_ff:ff|Q~0                    ;    ;
+; counter9to0:c19|t_ff:ff4|d_ff:ff|Q~0                   ;    ;
+; counter9to0:c29|t_ff:ff4|d_ff:ff|Q~0                   ;    ;
+; counter9to0:c29|t_ff:ff1|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c29|t_ff:ff1|d_ff:ff|nand1~1               ;    ;
+; couter0to5:c15|t_ff:ff1|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c15|t_ff:ff1|d_ff:ff|nand1~1                ;    ;
+; counter9to0:c19|t_ff:ff1|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c19|t_ff:ff1|d_ff:ff|nand1~1               ;    ;
+; couter0to5:c25|t_ff:ff1|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c25|t_ff:ff1|d_ff:ff|nand1~1                ;    ;
+; counter9to0:c29|t_ff:ff2|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c29|t_ff:ff2|d_ff:ff|nand1~1               ;    ;
+; couter0to5:c15|t_ff:ff2|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c15|t_ff:ff2|d_ff:ff|nand1~1                ;    ;
+; counter9to0:c19|t_ff:ff2|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c19|t_ff:ff2|d_ff:ff|nand1~1               ;    ;
+; couter0to5:c25|t_ff:ff2|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c25|t_ff:ff2|d_ff:ff|nand1~1                ;    ;
+; couter0to5:c15|t_ff:ff3|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c15|t_ff:ff3|d_ff:ff|nand1~1                ;    ;
+; counter9to0:c29|t_ff:ff3|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c29|t_ff:ff3|d_ff:ff|nand1~1               ;    ;
+; counter9to0:c19|t_ff:ff3|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c19|t_ff:ff3|d_ff:ff|nand1~1               ;    ;
+; couter0to5:c25|t_ff:ff3|d_ff:ff|nand1~0                ;    ;
+; couter0to5:c25|t_ff:ff3|d_ff:ff|nand1~1                ;    ;
+; counter9to0:c19|t_ff:ff4|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c19|t_ff:ff4|d_ff:ff|nand1~1               ;    ;
+; counter9to0:c29|t_ff:ff4|d_ff:ff|nand1~0               ;    ;
+; counter9to0:c29|t_ff:ff4|d_ff:ff|nand1~1               ;    ;
+; Number of logic cells representing combinational loops ; 42 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; counter:c|state_reg[3..31]             ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 29 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 28    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 7     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; counter:c|state_reg[2]                 ; 8       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |stopwatch|disp_hex_mux:seven4|Mux3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clkdiv:cd          ;
++----------------+------------------------------+-----------------+
+; Parameter Name ; Value                        ; Type            ;
++----------------+------------------------------+-----------------+
+; DIVISOR        ; 0000000000000000000000000010 ; Unsigned Binary ;
++----------------+------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "disp_hex_mux:seven4" ;
++---------+-------+----------+--------------------+
+; Port    ; Type  ; Severity ; Details            ;
++---------+-------+----------+--------------------+
+; hex3[3] ; Input ; Info     ; Stuck at GND       ;
+; hex1[3] ; Input ; Info     ; Stuck at GND       ;
+; dp_in   ; Input ; Info     ; Stuck at VCC       ;
++---------+-------+----------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|t_ff:ff3"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|t_ff:ff2"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|t_ff:ff1"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|mix4to1:mix3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|mix4to1:mix2" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15|mix4to1:mix1" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "couter0to5:c15"                                                                                                                            ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "set[2..1]" will be connected to GND. ;
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|t_ff:ff4"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|t_ff:ff3"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|t_ff:ff2"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|t_ff:ff1"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|mix4to1:mix8" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|mix4to1:mix7" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|mix4to1:mix6" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19|mix4to1:mix5" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; d    ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter9to0:c19"                                                                                                                           ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; set  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "set[3..1]" will be connected to GND. ;
+; set  ; Input ; Info     ; Stuck at GND                                                                                                                                ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "clkdiv:cd"   ;
++-------+-------+----------+--------------+
+; Port  ; Type  ; Severity ; Details      ;
++-------+-------+----------+--------------+
+; reset ; Input ; Info     ; Stuck at GND ;
++-------+-------+----------+--------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "counter:c"  ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; num  ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 17                          ;
+; cycloneiii_ff         ; 36                          ;
+;     CLR               ; 7                           ;
+;     SCLR              ; 28                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 173                         ;
+;     arith             ; 27                          ;
+;         2 data inputs ; 27                          ;
+;     normal            ; 146                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 30                          ;
+;         4 data inputs ; 97                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.87                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Feb 14 05:20:24 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off stopwatch -c stopwatch
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file stopwatch.sv
+    Info (12023): Found entity 1: stopwatch File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(16): created implicit net for "reset" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(17): created implicit net for "clkdiv" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(18): created implicit net for "A09" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(18): created implicit net for "A19" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(18): created implicit net for "A29" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(18): created implicit net for "A39" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(19): created implicit net for "clk1" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(20): created implicit net for "A05" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(20): created implicit net for "A15" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(20): created implicit net for "A25" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(21): created implicit net for "clk2" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(22): created implicit net for "A091" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(22): created implicit net for "A191" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(22): created implicit net for "A291" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(22): created implicit net for "A391" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(23): created implicit net for "clk3" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(24): created implicit net for "A051" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(24): created implicit net for "A151" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at stopwatch.sv(24): created implicit net for "A251" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 24
+Info (12127): Elaborating entity "stopwatch" for the top level hierarchy
+Warning (12125): Using design file counter.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 1
+Info (12128): Elaborating entity "counter" for hierarchy "counter:c" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at counter.sv(40): truncated value with size 32 to match size of target (7) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 40
+Info (10041): Inferred latch for "q[0]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "q[1]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[0]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[1]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[2]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[3]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[4]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[5]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Info (10041): Inferred latch for "fnum[6]" at counter.sv(22) File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Warning (12125): Using design file clkdiv.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: clkdiv File: C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv Line: 1
+Info (12128): Elaborating entity "clkdiv" for hierarchy "clkdiv:cd" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 17
+Warning (12125): Using design file counter9to0.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter9to0 File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(9): created implicit net for "T0down" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(9): created implicit net for "T1down" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(9): created implicit net for "T2down" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(9): created implicit net for "T3down" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(11): created implicit net for "T0up" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(11): created implicit net for "T1up" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(11): created implicit net for "T2up" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(11): created implicit net for "T3up" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(14): created implicit net for "T0" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(15): created implicit net for "T1" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(16): created implicit net for "T2" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(17): created implicit net for "T3" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(19): created implicit net for "A01" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(19): created implicit net for "A0bar" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(20): created implicit net for "A11" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(20): created implicit net for "A1bar" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(21): created implicit net for "A21" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(21): created implicit net for "A2bar" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(22): created implicit net for "A31" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at counter9to0.sv(22): created implicit net for "A3bar" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 22
+Info (12128): Elaborating entity "counter9to0" for hierarchy "counter9to0:c19" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 18
+Warning (12125): Using design file down_logic9.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: down_logic9 File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(4): created implicit net for "A0bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(5): created implicit net for "A1bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(6): created implicit net for "A3bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(7): created implicit net for "A2bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(10): created implicit net for "t1" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(11): created implicit net for "t2" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(12): created implicit net for "t3" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(13): created implicit net for "t4" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(17): created implicit net for "p2" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(18): created implicit net for "p3" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(19): created implicit net for "p1" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(23): created implicit net for "y1" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(24): created implicit net for "y2" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at down_logic9.sv(25): created implicit net for "y3" File: C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv Line: 25
+Info (12128): Elaborating entity "down_logic9" for hierarchy "counter9to0:c19|down_logic9:d1" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 9
+Warning (12125): Using design file up_logic9.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: up_logic9 File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(4): created implicit net for "A2bar" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(5): created implicit net for "A1bar" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(6): created implicit net for "A0bar" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(7): created implicit net for "A3bar" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(8): created implicit net for "s1" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(9): created implicit net for "s2" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(12): created implicit net for "p2" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(13): created implicit net for "p1" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(16): created implicit net for "t1" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(17): created implicit net for "t2" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at up_logic9.sv(18): created implicit net for "t3" File: C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv Line: 18
+Info (12128): Elaborating entity "up_logic9" for hierarchy "counter9to0:c19|up_logic9:up1" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 11
+Warning (12125): Using design file mix4to1.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mix4to1 File: C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at mix4to1.sv(7): created implicit net for "s0bar" File: C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv Line: 7
+Info (12128): Elaborating entity "mix4to1" for hierarchy "counter9to0:c19|mix4to1:mix5" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 14
+Warning (12125): Using design file t_ff.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: t_ff File: C:/Users/ahmed/Desktop/stopwatch/t_ff.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at t_ff.sv(3): created implicit net for "D" File: C:/Users/ahmed/Desktop/stopwatch/t_ff.sv Line: 3
+Info (12128): Elaborating entity "t_ff" for hierarchy "counter9to0:c19|t_ff:ff1" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 19
+Warning (12125): Using design file d_ff.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: d_ff File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(3): created implicit net for "setbar" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(4): created implicit net for "resetbar" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(5): created implicit net for "t1" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(5): created implicit net for "t2" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(5): created implicit net for "t4" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.sv(7): created implicit net for "t3" File: C:/Users/ahmed/Desktop/stopwatch/d_ff.sv Line: 7
+Info (12128): Elaborating entity "d_ff" for hierarchy "counter9to0:c19|t_ff:ff1|d_ff:ff" File: C:/Users/ahmed/Desktop/stopwatch/t_ff.sv Line: 4
+Warning (12125): Using design file mix1.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mix1 File: C:/Users/ahmed/Desktop/stopwatch/mix1.sv Line: 1
+Info (12128): Elaborating entity "mix1" for hierarchy "counter9to0:c19|mix1:mix11" File: C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv Line: 23
+Warning (12125): Using design file couter0to5.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: couter0to5 File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(25): created implicit net for "T0down" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(25): created implicit net for "T1down" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(25): created implicit net for "T2down" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(27): created implicit net for "T0up" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(27): created implicit net for "T1up" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(27): created implicit net for "T2up" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(30): created implicit net for "T0" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(31): created implicit net for "T1" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(32): created implicit net for "T2" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(33): created implicit net for "A01" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(33): created implicit net for "A0bar" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(34): created implicit net for "A11" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(34): created implicit net for "A1bar" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(35): created implicit net for "A21" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at couter0to5.sv(35): created implicit net for "A2bar" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 35
+Info (12128): Elaborating entity "couter0to5" for hierarchy "couter0to5:c15" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 20
+Warning (12125): Using design file down_logic.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: down_logic File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(3): created implicit net for "A0bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(4): created implicit net for "A1bar" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(8): created implicit net for "n1" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(9): created implicit net for "n2" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(12): created implicit net for "n3" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(13): created implicit net for "n4" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at down_logic.sv(14): created implicit net for "n5" File: C:/Users/ahmed/Desktop/stopwatch/down_logic.sv Line: 14
+Info (12128): Elaborating entity "down_logic" for hierarchy "couter0to5:c15|down_logic:d1" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 25
+Warning (12125): Using design file up_logic.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: up_logic File: C:/Users/ahmed/Desktop/stopwatch/up_logic.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at up_logic.sv(3): created implicit net for "A2bar" File: C:/Users/ahmed/Desktop/stopwatch/up_logic.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at up_logic.sv(9): created implicit net for "n2" File: C:/Users/ahmed/Desktop/stopwatch/up_logic.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at up_logic.sv(10): created implicit net for "n1" File: C:/Users/ahmed/Desktop/stopwatch/up_logic.sv Line: 10
+Info (12128): Elaborating entity "up_logic" for hierarchy "couter0to5:c15|up_logic:up1" File: C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv Line: 27
+Warning (12125): Using design file disp_hex_mux.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: disp_hex_mux File: C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv Line: 1
+Info (12128): Elaborating entity "disp_hex_mux" for hierarchy "disp_hex_mux:seven4" File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 31
+Warning (10230): Verilog HDL assignment warning at disp_hex_mux.sv(26): truncated value with size 32 to match size of target (4) File: C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv Line: 26
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "counter:c|fnum[2]" merged with LATCH primitive "counter:c|fnum[0]" File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+Warning (13012): Latch counter:c|fnum[0] has unsafe behavior File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal counter:c|state_reg[2] File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 20
+Warning (13012): Latch counter:c|q[1] has unsafe behavior File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal counter:c|state_reg[2] File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 20
+Warning (13012): Latch counter:c|q[0] has unsafe behavior File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal counter:c|state_reg[2] File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 20
+Info (13000): Registers with preset signals will power-up high File: C:/Users/ahmed/Desktop/stopwatch/counter.sv Line: 20
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sseg[7]" is stuck at VCC File: C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/ahmed/Desktop/stopwatch/output_files/stopwatch.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 170 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 122 warnings
+    Info: Peak virtual memory: 4737 megabytes
+    Info: Processing ended: Mon Feb 14 05:20:45 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:36
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/ahmed/Desktop/stopwatch/output_files/stopwatch.map.smsg.
+
+

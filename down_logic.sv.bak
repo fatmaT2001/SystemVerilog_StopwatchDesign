@@ -1,0 +1,12 @@
+module down_logic (input logic A0,A1,A2,output logic T0,T1,T2);
+//invertors 
+not not1 (A0bar,A0);
+not not1 (A1bar,A1);
+//for T0
+assign T0=0;
+//for T1
+and andT12 (n1,A1bar,Aobar);
+and andT12 (n2,A1,A2,A0);
+and andT13 (n3,A0bar,A2);
+or orT2 (T2,n1,n2,n3);
+endmodule 

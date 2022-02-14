@@ -1,0 +1,536 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ahmed/Desktop/New folder
+vclkdiv
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1641590850
+!i10b 1
+!s100 ^zXjWFcD=G08eeg3OVm5Y0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IL>>fDUKLY^<^2T15Iz9YU3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1641485087
+8C:/Users/ahmed/Desktop/New folder/clkdiv.sv
+FC:/Users/ahmed/Desktop/New folder/clkdiv.sv
+!i122 2
+L0 1 24
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1641590850.000000
+!s107 C:/Users/ahmed/Desktop/New folder/up_logic9.sv|C:/Users/ahmed/Desktop/New folder/up_logic.sv|C:/Users/ahmed/Desktop/New folder/t_ff.sv|C:/Users/ahmed/Desktop/New folder/sw_testbanch.sv|C:/Users/ahmed/Desktop/New folder/stopwatch.sv|C:/Users/ahmed/Desktop/New folder/segment7.sv|C:/Users/ahmed/Desktop/New folder/real7segmant.sv|C:/Users/ahmed/Desktop/New folder/mix4to1.sv|C:/Users/ahmed/Desktop/New folder/mix1.sv|C:/Users/ahmed/Desktop/New folder/lab4.sv|C:/Users/ahmed/Desktop/New folder/highfsm.sv|C:/Users/ahmed/Desktop/New folder/fsm.sv|C:/Users/ahmed/Desktop/New folder/down_logic9.sv|C:/Users/ahmed/Desktop/New folder/down_logic.sv|C:/Users/ahmed/Desktop/New folder/disp_hex_mux.sv|C:/Users/ahmed/Desktop/New folder/d_ff.sv|C:/Users/ahmed/Desktop/New folder/couter0to5.sv|C:/Users/ahmed/Desktop/New folder/counter9to0.sv|C:/Users/ahmed/Desktop/New folder/counter0to5_test.sv|C:/Users/ahmed/Desktop/New folder/counter.sv|C:/Users/ahmed/Desktop/New folder/clkdiv.sv|
+Z7 !s90 -reportprogress|300|-work|work|C:/Users/ahmed/Desktop/New folder/clkdiv.sv|C:/Users/ahmed/Desktop/New folder/counter.sv|C:/Users/ahmed/Desktop/New folder/counter0to5_test.sv|C:/Users/ahmed/Desktop/New folder/counter9to0.sv|C:/Users/ahmed/Desktop/New folder/couter0to5.sv|C:/Users/ahmed/Desktop/New folder/d_ff.sv|C:/Users/ahmed/Desktop/New folder/disp_hex_mux.sv|C:/Users/ahmed/Desktop/New folder/down_logic.sv|C:/Users/ahmed/Desktop/New folder/down_logic9.sv|C:/Users/ahmed/Desktop/New folder/fsm.sv|C:/Users/ahmed/Desktop/New folder/highfsm.sv|C:/Users/ahmed/Desktop/New folder/lab4.sv|C:/Users/ahmed/Desktop/New folder/mix1.sv|C:/Users/ahmed/Desktop/New folder/mix4to1.sv|C:/Users/ahmed/Desktop/New folder/real7segmant.sv|C:/Users/ahmed/Desktop/New folder/segment7.sv|C:/Users/ahmed/Desktop/New folder/stopwatch.sv|C:/Users/ahmed/Desktop/New folder/sw_testbanch.sv|C:/Users/ahmed/Desktop/New folder/t_ff.sv|C:/Users/ahmed/Desktop/New folder/up_logic.sv|C:/Users/ahmed/Desktop/New folder/up_logic9.sv|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vcounter
+R1
+R2
+!i10b 1
+!s100 :`7P7F^?INY;YfWLg>`M82
+R3
+I79]R8GL]0zRYM_m?bOG_51
+R4
+S1
+R0
+w1641574563
+8C:/Users/ahmed/Desktop/New folder/counter.sv
+FC:/Users/ahmed/Desktop/New folder/counter.sv
+!i122 2
+L0 1 93
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 C:/Users/ahmed/Desktop/New folder/up_logic9.sv|C:/Users/ahmed/Desktop/New folder/up_logic.sv|C:/Users/ahmed/Desktop/New folder/t_ff.sv|C:/Users/ahmed/Desktop/New folder/sw_testbanch.sv|C:/Users/ahmed/Desktop/New folder/stopwatch.sv|C:/Users/ahmed/Desktop/New folder/segment7.sv|C:/Users/ahmed/Desktop/New folder/real7segmant.sv|C:/Users/ahmed/Desktop/New folder/mix4to1.sv|C:/Users/ahmed/Desktop/New folder/mix1.sv|C:/Users/ahmed/Desktop/New folder/lab4.sv|C:/Users/ahmed/Desktop/New folder/highfsm.sv|C:/Users/ahmed/Desktop/New folder/fsm.sv|C:/Users/ahmed/Desktop/New folder/down_logic9.sv|C:/Users/ahmed/Desktop/New folder/down_logic.sv|C:/Users/ahmed/Desktop/New folder/disp_hex_mux.sv|C:/Users/ahmed/Desktop/New folder/d_ff.sv|C:/Users/ahmed/Desktop/New folder/couter0to5.sv|C:/Users/ahmed/Desktop/New folder/counter9to0.sv|C:/Users/ahmed/Desktop/New folder/counter0to5_test.sv|C:/Users/ahmed/Desktop/New folder/counter.sv|C:/Users/ahmed/Desktop/New folder/clkdiv.sv|
+R7
+!i113 1
+R8
+R9
+vcounter0to5_test
+R1
+R2
+!i10b 1
+!s100 X@L>LYSZz6zSMT3BdA9^<3
+R3
+IOn2JLP[HW8OX3SiC2];?h1
+R4
+S1
+R0
+w1641145089
+8C:/Users/ahmed/Desktop/New folder/counter0to5_test.sv
+FC:/Users/ahmed/Desktop/New folder/counter0to5_test.sv
+!i122 2
+Z11 L0 1 28
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vcounter9to0
+R1
+R2
+!i10b 1
+!s100 <fV?GBh83Dn:JiYb>hPl?2
+R3
+IV7ZUZ?@e;c6dKTGg_K9aW2
+R4
+S1
+R0
+w1641263101
+8C:/Users/ahmed/Desktop/New folder/counter9to0.sv
+FC:/Users/ahmed/Desktop/New folder/counter9to0.sv
+!i122 2
+R11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vcouter0to5
+R1
+R2
+!i10b 1
+!s100 NZZzCbB?9@3Y6GIl[0al;3
+R3
+I8b8cm@2cHiCSblEhA?06N3
+R4
+S1
+R0
+w1641589309
+8C:/Users/ahmed/Desktop/New folder/couter0to5.sv
+FC:/Users/ahmed/Desktop/New folder/couter0to5.sv
+!i122 2
+L0 17 25
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vd_ff
+R1
+R2
+!i10b 1
+!s100 HSiHa>LJ[Lz]77?ZLJgC]1
+R3
+IdInl[:95nWSbR_0mN=60z2
+R4
+S1
+R0
+w1640346500
+8C:/Users/ahmed/Desktop/New folder/d_ff.sv
+FC:/Users/ahmed/Desktop/New folder/d_ff.sv
+!i122 2
+L0 1 15
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vdisp_hex_mux
+R1
+R2
+!i10b 1
+!s100 EBAa4YBz^mVnlIecLKBDR1
+R3
+IkWVA;aG1e:z1:l4AUIbin1
+R4
+S1
+R0
+w1637173526
+8C:/Users/ahmed/Desktop/New folder/disp_hex_mux.sv
+FC:/Users/ahmed/Desktop/New folder/disp_hex_mux.sv
+!i122 2
+L0 1 79
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vdown_logic
+R1
+R2
+!i10b 1
+!s100 SkO[1G0214UPLQ`Qnl3D91
+R3
+Iek?X[:kiVATWoS`kYdo4T2
+R4
+S1
+R0
+w1640730797
+8C:/Users/ahmed/Desktop/New folder/down_logic.sv
+FC:/Users/ahmed/Desktop/New folder/down_logic.sv
+!i122 2
+L0 1 17
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vdown_logic9
+R1
+R2
+!i10b 1
+!s100 _DiH@S6^ASBa:S?6J8TlT0
+R3
+Ii4S82A5lmlcQ8]58Sl^cg2
+R4
+S1
+R0
+w1641227805
+8C:/Users/ahmed/Desktop/New folder/down_logic9.sv
+FC:/Users/ahmed/Desktop/New folder/down_logic9.sv
+!i122 2
+R11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vfsm
+R1
+R2
+!i10b 1
+!s100 R_2[AhLcS8SE754IN:6XK1
+R3
+I=9ZMm;iHT9Y91A5SgmjQD0
+R4
+S1
+R0
+w1641519373
+8C:/Users/ahmed/Desktop/New folder/fsm.sv
+FC:/Users/ahmed/Desktop/New folder/fsm.sv
+!i122 2
+L0 1 91
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vhighfsm
+R1
+R2
+!i10b 1
+!s100 4_gn3n1mQ:Z2@Ti[;Vm0?2
+R3
+IaG]PRA]Dh[7UT>=4V`:_h1
+R4
+S1
+R0
+w1641577628
+8C:/Users/ahmed/Desktop/New folder/highfsm.sv
+FC:/Users/ahmed/Desktop/New folder/highfsm.sv
+!i122 2
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vlab4
+R1
+R2
+!i10b 1
+!s100 BnozfaoRf4kaiX:a_8XUQ3
+R3
+I[b7kZRV4bYTzmC:Vbjbl;1
+R4
+S1
+R0
+w1641464532
+8C:/Users/ahmed/Desktop/New folder/lab4.sv
+FC:/Users/ahmed/Desktop/New folder/lab4.sv
+!i122 2
+L0 1 30
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmix1
+R1
+R2
+!i10b 1
+!s100 Z[i6Ll0W`V;[6G4;;V>CB3
+R3
+IEN_aX=MXR@9oc]5_icEDT0
+R4
+S1
+R0
+w1640347161
+8C:/Users/ahmed/Desktop/New folder/mix1.sv
+FC:/Users/ahmed/Desktop/New folder/mix1.sv
+!i122 2
+Z12 L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmix4to1
+R1
+R2
+!i10b 1
+!s100 l_EZk[G;k6]IbESnbIA^;1
+R3
+IH3[0]YngOaV6zDY1kC^Ez1
+R4
+S1
+R0
+w1641082796
+8C:/Users/ahmed/Desktop/New folder/mix4to1.sv
+FC:/Users/ahmed/Desktop/New folder/mix4to1.sv
+!i122 2
+R12
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vreal7segmant
+R1
+R2
+!i10b 1
+!s100 @W:CV[gENf1:IJM8hYTW12
+R3
+IQ^cJLF4[[[4[kQ0j8^UA53
+R4
+S1
+R0
+w1641241186
+8C:/Users/ahmed/Desktop/New folder/real7segmant.sv
+FC:/Users/ahmed/Desktop/New folder/real7segmant.sv
+!i122 2
+L0 1 27
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vsegment7
+R1
+R2
+!i10b 1
+!s100 ^2W_FFJPOO01ZkAA797ik1
+R3
+I<fLBW=C1Dee4mGA6aC?MM0
+R4
+S1
+R0
+w1641241185
+8C:/Users/ahmed/Desktop/New folder/segment7.sv
+FC:/Users/ahmed/Desktop/New folder/segment7.sv
+!i122 2
+L0 2 23
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vstopwatch
+R1
+R2
+!i10b 1
+!s100 LZES`=Qz>JMSXelE]iT_M2
+R3
+IgkJO8:on<Sc6H=O@8HWL`2
+R4
+S1
+R0
+w1641589718
+8C:/Users/ahmed/Desktop/New folder/stopwatch.sv
+FC:/Users/ahmed/Desktop/New folder/stopwatch.sv
+!i122 2
+L0 1 29
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vsw_testbanch
+R1
+R2
+!i10b 1
+!s100 S6fmi^D7dBC3jgEHSRJAm2
+R3
+I8N@DSAz3l07R6li4;QG`k3
+R4
+S1
+R0
+w1641590676
+8C:/Users/ahmed/Desktop/New folder/sw_testbanch.sv
+FC:/Users/ahmed/Desktop/New folder/sw_testbanch.sv
+!i122 2
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vt_ff
+R1
+R2
+!i10b 1
+!s100 C]<J6_ecPmjbe>l3>K5Sz1
+R3
+Icz5Vi7?63AQ2GOeEgd7F90
+R4
+S1
+R0
+w1641241037
+8C:/Users/ahmed/Desktop/New folder/t_ff.sv
+FC:/Users/ahmed/Desktop/New folder/t_ff.sv
+!i122 2
+L0 1 5
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vup_logic
+R1
+R2
+!i10b 1
+!s100 X5M`aTLC4iek]>0ACBH`11
+R3
+IA?JDGDeV7VT]XzgJRJ>3?1
+R4
+S1
+R0
+w1640876024
+8C:/Users/ahmed/Desktop/New folder/up_logic.sv
+FC:/Users/ahmed/Desktop/New folder/up_logic.sv
+!i122 2
+L0 1 12
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vup_logic9
+R1
+R2
+!i10b 1
+!s100 lC^g2@H`?Q0_;[5J8U8=g2
+R3
+In`okz;U9XzU5RGVm]c_GZ2
+R4
+S1
+R0
+w1641223123
+8C:/Users/ahmed/Desktop/New folder/up_logic9.sv
+FC:/Users/ahmed/Desktop/New folder/up_logic9.sv
+!i122 2
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9

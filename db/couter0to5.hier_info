@@ -1,0 +1,177 @@
+|couter0to5
+s[0] => s[0].IN3
+s[1] => s[1].IN3
+clk => clk.IN3
+set[0] => set[0].IN2
+set[1] => set[1].IN2
+set[2] => set[2].IN2
+reset => reset.IN3
+A0 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A1 <= A1.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= A2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|down_logic:d1
+A0 => andT22.IN0
+A0 => andT21.IN0
+A0 => andT11.IN0
+A0 => andT13.IN0
+A1 => andT22.IN1
+A1 => andT11.IN1
+A1 => andT12.IN0
+A1 => andT21.IN1
+A2 => andT22.IN2
+A2 => andT12.IN1
+A2 => andT13.IN1
+T0 <= <VCC>
+T1 <= orT1.DB_MAX_OUTPUT_PORT_TYPE
+T2 <= orT2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|up_logic:up1
+A0 => andT1.IN0
+A0 => andT22.IN0
+A0 => andT21.IN0
+A1 => andT21.IN1
+A2 => andT22.IN1
+A2 => andT1.IN1
+T0 <= <VCC>
+T1 <= andT1.DB_MAX_OUTPUT_PORT_TYPE
+T2 <= orT2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|mix4to1:mix1
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+a => WideAnd0.IN0
+b => WideAnd1.IN0
+c => WideAnd2.IN0
+d => WideAnd3.IN0
+s0 => WideAnd1.IN1
+s0 => WideAnd3.IN1
+s0 => WideAnd0.IN1
+s0 => WideAnd2.IN1
+s1 => WideAnd2.IN2
+s1 => WideAnd3.IN2
+s1 => WideAnd0.IN2
+s1 => WideAnd1.IN2
+
+
+|couter0to5|mix4to1:mix2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+a => WideAnd0.IN0
+b => WideAnd1.IN0
+c => WideAnd2.IN0
+d => WideAnd3.IN0
+s0 => WideAnd1.IN1
+s0 => WideAnd3.IN1
+s0 => WideAnd0.IN1
+s0 => WideAnd2.IN1
+s1 => WideAnd2.IN2
+s1 => WideAnd3.IN2
+s1 => WideAnd0.IN2
+s1 => WideAnd1.IN2
+
+
+|couter0to5|mix4to1:mix3
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+a => WideAnd0.IN0
+b => WideAnd1.IN0
+c => WideAnd2.IN0
+d => WideAnd3.IN0
+s0 => WideAnd1.IN1
+s0 => WideAnd3.IN1
+s0 => WideAnd0.IN1
+s0 => WideAnd2.IN1
+s1 => WideAnd2.IN2
+s1 => WideAnd3.IN2
+s1 => WideAnd0.IN2
+s1 => WideAnd1.IN2
+
+
+|couter0to5|t_ff:ff1
+t => xor1.IN1
+clk => clk.IN1
+set => set.IN1
+reset => reset.IN1
+Q <= d_ff:ff.port4
+Qbar <= d_ff:ff.port5
+
+
+|couter0to5|t_ff:ff1|d_ff:ff
+D => nand4.IN1
+set => nand1.IN0
+set => nand5.IN1
+reset => nand2.IN1
+reset => nand4.IN2
+reset => nand6.IN1
+clk => nand2.IN2
+clk => nand3.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= nand6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|t_ff:ff2
+t => xor1.IN1
+clk => clk.IN1
+set => set.IN1
+reset => reset.IN1
+Q <= d_ff:ff.port4
+Qbar <= d_ff:ff.port5
+
+
+|couter0to5|t_ff:ff2|d_ff:ff
+D => nand4.IN1
+set => nand1.IN0
+set => nand5.IN1
+reset => nand2.IN1
+reset => nand4.IN2
+reset => nand6.IN1
+clk => nand2.IN2
+clk => nand3.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= nand6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|t_ff:ff3
+t => xor1.IN1
+clk => clk.IN1
+set => set.IN1
+reset => reset.IN1
+Q <= d_ff:ff.port4
+Qbar <= d_ff:ff.port5
+
+
+|couter0to5|t_ff:ff3|d_ff:ff
+D => nand4.IN1
+set => nand1.IN0
+set => nand5.IN1
+reset => nand2.IN1
+reset => nand4.IN2
+reset => nand6.IN1
+clk => nand2.IN2
+clk => nand3.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= nand6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|mix1:mix11
+a => y.DATAA
+b => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|mix1:mix12
+a => y.DATAA
+b => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|couter0to5|mix1:mix13
+a => y.DATAA
+b => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

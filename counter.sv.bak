@@ -1,0 +1,79 @@
+module counter
+	(
+	input logic clk, r,
+	input logic s ,
+	input logic l ,
+	input logic m,
+	output logic r,
+	output logic [1:0]q
+	);
+	assign a = r'&s' | r'& m
+	assign b = r'&s' | r'& m'& l
+	typedef enum {up , down , add5, stop,reset} state_type; 
+	state_type state_reg , state_next ;
+	always_ff @(posedge clk, posedge r)
+	if (r) 
+		state_reg <= reset ;
+	else
+		state_reg <= state_next ;
+always_comb
+	case (state_reg)
+		reset:
+		begin
+			if ( a' && b')
+				state_next = down;
+			if( a && b')
+				state_next = up;
+			if( a && b)
+				state_next = stop;
+			if(a' && b)
+				state_next = add5;				
+		end
+		add5:
+		begin	
+			if ( a' && b')
+				state_next = down;
+			if( a && b')
+				state_next = up;
+		end
+		up:
+		begin
+			if( a && b)
+				state_next = stop;
+			
+		end
+		down:
+		begin
+			if( a && b)
+				state_next = stop;
+		end
+		stop:
+		begin
+			if ( a' && b')
+				state_next = down;
+			if( a && b')
+				state_next = up;
+			if( a && b)
+				state_next = stop;
+			if( a' && b)
+				state_next = add5;	
+		end		
+		default: 
+			state_next = reset;
+	endcase
+end
+	////////////
+always_comb
+case(state_reg)
+	up:begin
+		q1=1'b0;
+		end
+	down:begin
+		q1=1'b1;
+		q2=1'b0;
+		end	
+	stop:begin
+		q1=1'b1;
+		q2=1'b1;
+		end	
+endmodule

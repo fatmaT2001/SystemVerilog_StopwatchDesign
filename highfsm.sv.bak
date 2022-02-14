@@ -1,0 +1,6 @@
+module highfsm (clk,r,s,l,m,an,sseg);
+input logic clk,r,s,l,m;
+output logic [1:0]q;
+fsm f1 (clk,r,s,i,m,q);
+stopwatch sw (clk,s,reset,an,sseg);
+endmodule 

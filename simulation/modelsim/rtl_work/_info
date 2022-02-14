@@ -1,0 +1,375 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ahmed/Desktop/stopwatch/simulation/modelsim
+vclkdiv
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1644809931
+!i10b 1
+!s100 RaXYAo?;h0:QdRi:0LL4]3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IL>93Ek<a_@afAWOOWH_X23
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1644808698
+8C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv
+FC:/Users/ahmed/Desktop/stopwatch/clkdiv.sv
+!i122 2
+L0 1 24
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1644809931.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/clkdiv.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/ahmed/Desktop/stopwatch
+Z9 tCvgOpt 0
+vcounter
+R1
+Z10 !s110 1644809930
+!i10b 1
+!s100 :`7P7F^?INY;YfWLg>`M82
+R3
+IH=XNzoME=GNj:kd^KKBg71
+R4
+S1
+R0
+w1641574563
+8C:/Users/ahmed/Desktop/stopwatch/counter.sv
+FC:/Users/ahmed/Desktop/stopwatch/counter.sv
+!i122 1
+L0 1 93
+R5
+r1
+!s85 0
+31
+!s108 1644809930.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/counter.sv|
+!i113 1
+R7
+R8
+R9
+vcounter9to0
+R1
+R2
+!i10b 1
+!s100 <fV?GBh83Dn:JiYb>hPl?2
+R3
+IW<jFR;`JTTzj]Mc`7W6aL1
+R4
+S1
+R0
+w1641263101
+8C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv
+FC:/Users/ahmed/Desktop/stopwatch/counter9to0.sv
+!i122 3
+Z11 L0 1 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/counter9to0.sv|
+!i113 1
+R7
+R8
+R9
+vcouter0to5
+R1
+Z12 !s110 1644809934
+!i10b 1
+!s100 NZZzCbB?9@3Y6GIl[0al;3
+R3
+IFmachDOUfclA<T;OfdGZW3
+R4
+S1
+R0
+w1641589309
+8C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv
+FC:/Users/ahmed/Desktop/stopwatch/couter0to5.sv
+!i122 10
+L0 17 25
+R5
+r1
+!s85 0
+31
+Z13 !s108 1644809934.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/couter0to5.sv|
+!i113 1
+R7
+R8
+R9
+vd_ff
+R1
+Z14 !s110 1644809933
+!i10b 1
+!s100 HSiHa>LJ[Lz]77?ZLJgC]1
+R3
+INEOa1LXiN_PhDYedOGV7O2
+R4
+S1
+R0
+w1640346500
+8C:/Users/ahmed/Desktop/stopwatch/d_ff.sv
+FC:/Users/ahmed/Desktop/stopwatch/d_ff.sv
+!i122 8
+L0 1 15
+R5
+r1
+!s85 0
+31
+Z15 !s108 1644809933.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/d_ff.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/d_ff.sv|
+!i113 1
+R7
+R8
+R9
+vdisp_hex_mux
+R1
+R12
+!i10b 1
+!s100 nThX[aXDh6EQ[F4dE]RgJ0
+R3
+IXa^lF[bBA=<=;AV6?40Xi0
+R4
+S1
+R0
+w1644808687
+8C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv
+FC:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv
+!i122 13
+L0 1 79
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/disp_hex_mux.sv|
+!i113 1
+R7
+R8
+R9
+vdown_logic
+R1
+R12
+!i10b 1
+!s100 SkO[1G0214UPLQ`Qnl3D91
+R3
+I=PF6LVU:73c6CY<O?Rm@>3
+R4
+S1
+R0
+w1640730797
+8C:/Users/ahmed/Desktop/stopwatch/down_logic.sv
+FC:/Users/ahmed/Desktop/stopwatch/down_logic.sv
+!i122 11
+L0 1 17
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/ahmed/Desktop/stopwatch/down_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/down_logic.sv|
+!i113 1
+R7
+R8
+R9
+vdown_logic9
+R1
+Z16 !s110 1644809932
+!i10b 1
+!s100 _DiH@S6^ASBa:S?6J8TlT0
+R3
+Im[:3=R3RT9I36B]7YnmcK1
+R4
+S1
+R0
+w1641227805
+8C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv
+FC:/Users/ahmed/Desktop/stopwatch/down_logic9.sv
+!i122 4
+R11
+R5
+r1
+!s85 0
+31
+Z17 !s108 1644809932.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/down_logic9.sv|
+!i113 1
+R7
+R8
+R9
+vmix1
+R1
+R12
+!i10b 1
+!s100 Z[i6Ll0W`V;[6G4;;V>CB3
+R3
+I0XL<jTfSXmOB20?jBahnW0
+R4
+S1
+R0
+w1640347161
+8C:/Users/ahmed/Desktop/stopwatch/mix1.sv
+FC:/Users/ahmed/Desktop/stopwatch/mix1.sv
+!i122 9
+Z18 L0 1 11
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/ahmed/Desktop/stopwatch/mix1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/mix1.sv|
+!i113 1
+R7
+R8
+R9
+vmix4to1
+R1
+R16
+!i10b 1
+!s100 l_EZk[G;k6]IbESnbIA^;1
+R3
+ISaWb;4M_zH6ZLA`8WiGoF1
+R4
+S1
+R0
+w1641082796
+8C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv
+FC:/Users/ahmed/Desktop/stopwatch/mix4to1.sv
+!i122 6
+R18
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/mix4to1.sv|
+!i113 1
+R7
+R8
+R9
+vstopwatch
+R1
+R10
+!i10b 1
+!s100 9Idi3KI:XWF3@bM:93Y750
+R3
+I5^>Ve7mbka?_HJSD^XRLJ0
+R4
+S1
+R0
+w1644809898
+8C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv
+FC:/Users/ahmed/Desktop/stopwatch/stopwatch.sv
+!i122 0
+L0 1 33
+R5
+r1
+!s85 0
+31
+!s108 1644809929.000000
+!s107 C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/stopwatch.sv|
+!i113 1
+R7
+R8
+R9
+vt_ff
+R1
+R14
+!i10b 1
+!s100 C]<J6_ecPmjbe>l3>K5Sz1
+R3
+IGl1k?m_LASLdBXk8YH>gz3
+R4
+S1
+R0
+w1641241037
+8C:/Users/ahmed/Desktop/stopwatch/t_ff.sv
+FC:/Users/ahmed/Desktop/stopwatch/t_ff.sv
+!i122 7
+L0 1 5
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/ahmed/Desktop/stopwatch/t_ff.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/t_ff.sv|
+!i113 1
+R7
+R8
+R9
+vup_logic
+R1
+R12
+!i10b 1
+!s100 X5M`aTLC4iek]>0ACBH`11
+R3
+IOYZj0DhQl[G<IJaYNXzgO3
+R4
+S1
+R0
+w1640876024
+8C:/Users/ahmed/Desktop/stopwatch/up_logic.sv
+FC:/Users/ahmed/Desktop/stopwatch/up_logic.sv
+!i122 12
+L0 1 12
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/ahmed/Desktop/stopwatch/up_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/up_logic.sv|
+!i113 1
+R7
+R8
+R9
+vup_logic9
+R1
+R16
+!i10b 1
+!s100 lC^g2@H`?Q0_;[5J8U8=g2
+R3
+IO0B2]z2lb^0UcXSjb1^na0
+R4
+S1
+R0
+w1641223123
+8C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv
+FC:/Users/ahmed/Desktop/stopwatch/up_logic9.sv
+!i122 5
+L0 1 21
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ahmed/Desktop/stopwatch|C:/Users/ahmed/Desktop/stopwatch/up_logic9.sv|
+!i113 1
+R7
+R8
+R9
